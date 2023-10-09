@@ -19,7 +19,7 @@ public class Tree
         {
             parent.add(al.get(i));
         }
-        System.out.print(parent);
+
         boolean b=true;
         
         for(int i=0;i<parent.size()-1;i++)
