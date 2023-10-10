@@ -38,7 +38,7 @@ public class Tree
             break;
             }
             else
-            c=0;
+            c=1;
         }
         
         System.out.print(b);
