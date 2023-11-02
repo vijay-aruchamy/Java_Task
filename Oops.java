@@ -19,7 +19,7 @@ class Child1 extends Parent1
 {
     Child1()
     {
-        super(); //must be in first line
+        super(); 
         System.out.println("second");
 
     }
