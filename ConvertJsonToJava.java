@@ -43,7 +43,7 @@ public class ConvertJsonToJava {
                 if (jsonObject.get(fieldName).getClass().getSimpleName().equals("JSONArray")) {
 
                     JSONArray jsonArray = (JSONArray) jsonObject.get(fieldName);
-                    List<T> list = new ArrayList<>();
+                    List<T> list = new ArrayList<>(); 
                     for (int i = 0; i < jsonArray.length(); i++) {
                         list.add((T) jsonArray.get(i));
                     }
