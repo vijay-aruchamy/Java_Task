@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\vijay\\Downloads\\org.json.jar\\org.json.jar"
+    ]
+}
