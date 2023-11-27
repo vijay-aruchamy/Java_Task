@@ -16,7 +16,7 @@ public class ThreadEx extends Thread {
     }
 }
 
-class Main
+class Main1
 {
 public static void main(String[] args) {
     ThreadEx thread =new ThreadEx();
@@ -40,5 +40,6 @@ public static void main(String[] args) {
         {
             e.printStackTrace();
         }
+}
 }
 }

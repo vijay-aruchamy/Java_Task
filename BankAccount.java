@@ -32,35 +32,39 @@ class MainThraed{
         
         
 
-      Thread desposit =new Thread ();
+      Thread desposit =new Thread (()->
+      {
         for(int i=0;i<2;i++)
         {
            account.addBalance(100);
            try {
-            desposit.sleep(1000);
+            Thread.sleep(1000);
            } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
            }
         }
+    });
     
 
-        Thread withdraw=new Thread ();
+        Thread withdraw=new Thread (()->
+        {
         
          for(int i=0;i<2;i++)
         {
            account.withDrawAmount(100);
            try {
-            withdraw.sleep(1500);
+            Thread.sleep(1500);
            } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
            }
         }
+    });
         desposit.start();
         withdraw.start();
     
-
     }
+
 
 }
