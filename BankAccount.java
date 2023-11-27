@@ -1,21 +1,21 @@
 public class BankAccount {
     int balance;
 
-    BankAccount(int amount) {
-        this.balance += amount;
+    BankAccount(int balance) {
+        this.balance += balance;
     }
 
-    void addBalance(int amount) {
-        this.balance += amount;
-        System.out.println("Total amount After Adding : " + this.balance);
+    void addBalance(int balance) {
+        this.balance += balance;
+        System.out.println("Total balance After Adding : " + this.balance);
     }
 
-    void withDrawAmount(int amount) {
-        if (this.balance >= amount) {
-            this.balance -= amount;
-            System.out.println("Amount after WithDrawal : " + this.balance);
+    void withDrawbalance(int balance) {
+        if (this.balance >= balance) {
+            this.balance -= balance;
+            System.out.println("balance after WithDrawal : " + this.balance);
         } else
-            System.out.println("Amount not available");
+            System.out.println("balance not available");
     }
 
 }
@@ -40,7 +40,7 @@ class MainThraed {
         Thread withdraw = new Thread(() -> {
 
             for (int i = 0; i < 2; i++) {
-                account.withDrawAmount(100);
+                account.withDrawbalance(100);
                 try {
                     Thread.sleep(1500);
                 } catch (Exception e) {
