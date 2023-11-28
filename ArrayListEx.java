@@ -17,7 +17,7 @@ class Student {
 
 }
 
-public class ArrayListEx {
+public class ArrayListEx { 
 
     public static void main(String[] args) {
         ArrayList<Student> al = new ArrayList<>();
